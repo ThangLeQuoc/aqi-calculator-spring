@@ -1,6 +1,7 @@
 package com.github.thanglequoc.aqicalculatorspringboot.aqicalculator;
 
-import com.github.thanglequoc.aqicalculatorspringboot.aqicalculator.request.AQICalculationRequest;
+import com.github.thanglequoc.aqicalculatorspringboot.aqicalculator.request.NowcastAQICalculationRequest;
+import com.github.thanglequoc.aqicalculatorspringboot.aqicalculator.request.RegularAQICalculationRequest;
 import com.thanglequoc.aqicalculator.AQICalculator;
 import com.thanglequoc.aqicalculator.AQIResult;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -19,9 +20,12 @@ public class AQICalculatorController {
     }
 
     @PostMapping("/aqi")
-    public AQIResult calculateAQI(@RequestBody AQICalculationRequest calculationRequest) {
+    public AQIResult calculateAQI(@RequestBody RegularAQICalculationRequest calculationRequest) {
         return aqiCalculator.getAQI(calculationRequest.getPollutant(), calculationRequest.getConcentration());
     }
 
-    // Endpoint for Nowcast AQI
+    @PostMapping("/nowcast-aqi")
+    public AQIResult calculateNowcastAQI(@RequestBody NowcastAQICalculationRequest calculationRequest) {
+        return aqiCalculator.getNowCastAQI(calculationRequest.getPollutant(), calculationRequest.getConcentrationsLast12Hours());
+    }
 }
