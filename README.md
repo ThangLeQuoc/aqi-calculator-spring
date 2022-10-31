@@ -96,7 +96,7 @@ Request Body (content-type: JSON)
 The `aqi` in the response is the Nowcast AQI  
 See [AQIResult](https://github.com/ThangLeQuoc/aqi-calculator#using-aqiresult-object) to understand about the AQI response result.
 
-## Reference: List of pollutant available for AQI calculation
+## List of pollutant available for AQI calculation
 | Pollutant | Code   |
 |-----------|--------|
 | PM10      | `PM10` |
@@ -105,3 +105,6 @@ See [AQIResult](https://github.com/ThangLeQuoc/aqi-calculator#using-aqiresult-ob
 | CO        | `CO`   |
 | SO2       | `SO2`  |
 | NO2       | `NO2`  |
+
+#### References
+See [AQI Calculator repository](https://github.com/ThangLeQuoc/aqi-calculator) for more information
