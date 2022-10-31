@@ -1,6 +1,6 @@
 # Spring Boot AQI Calculator
 
-The [Java AQI Calculator](https://github.com/ThangLeQuoc/aqi-calculator) as the Spring Boot application to make it easy to start and run.
+The [Java AQI Calculator](https://github.com/ThangLeQuoc/aqi-calculator) as the REST API Spring Boot application to make it easy to start and run.
 
 # Installation
 Checkout the code  
