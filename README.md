@@ -78,6 +78,24 @@ Request Body (content-type: JSON)
 | pollutant     | String | The pollutant. See list of available pollutant                                                                                                                                                                            |
 | concentrationsLast12Hours | array of double | The first value in the array is the avg value in the current hour, and each next element in the array represent the previous data of the hour before current hour. If the hour doesn't have data, replace missing data in the hour with **-1**. See [here for further example](https://github.com/ThangLeQuoc/aqi-calculator#for-nowcast-aqi-calculation) |
 
+**Response**
+```json
+{
+    "pollutant": "PM25",
+    "concentration": 66.6,
+    "category": "Unhealthy",
+    "color": "Red",
+    "meaning": "Everyone may begin to experience health effects; members of sensitive groups may experience more serious health effects",
+    "healthEffectsStatements": "Increased aggravation of respiratory symptoms in sensitive groups including older adults, children, and people of lower socioeconomic status; increased aggravation of heart or lung disease and premature mortality in people with heart or lung disease; increased respiratory effects in general population",
+    "cautionaryStatements": "People with heart or lung disease, older adults, children, and people of lower socioeconomic status should avoid prolonged or heavy exertion; everyone else should reduce prolonged or heavy exertion",
+    "sensitiveGroups": "People with respiratory or heart disease, the elderly and children are the groups most at risk",
+    "aqi": 157
+}
+```
+
+The `aqi` in the response is the Nowcast AQI  
+See [AQIResult](https://github.com/ThangLeQuoc/aqi-calculator#using-aqiresult-object) to understand about the AQI response result.
+
 ## Reference: List of pollutant available for AQI calculation
 | Pollutant | Code   |
 |-----------|--------|
