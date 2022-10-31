@@ -5,7 +5,7 @@ The Java AQI Calculator application as the Spring Boot application to make it ea
 # Installation
 
 
-# For Docker user (strongly recommended for simplicity)
+# For Docker user (strongly recommended)
 Fear of Java, Spring Boot, or maybe you're just too lazy to install them.  
 With [Docker](https://www.docker.com/), it's super easy to get the container up and running without installing Java on your local machine. You don't need to know Java or Spring  
 Give it a go:  
