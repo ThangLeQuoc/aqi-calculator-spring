@@ -5,7 +5,7 @@ The [Java AQI Calculator](https://github.com/ThangLeQuoc/aqi-calculator) as the 
 # Installation
 Checkout the code  
 Inside the project root, run
->./gradlew clean assemble
+>./gradlew bootRun
 
 
 # For Docker user (strongly recommended)
