@@ -76,12 +76,14 @@ Request Body (content-type: JSON)
 | Parameter     | Type   | Detail                                                                                                                                                                                                                    |
 |---------------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | pollutant     | String | The pollutant. See list of available pollutant                                                                                                                                                                            |
-| concentrationsLast12Hours | array of double | The first value in the array is the avg value in the current hour, and each next element in the array represent the previous data of the hour before current hour.
-If the hour doesn't have data, replace missing data in the hour with **-1**. See [here for further example](https://github.com/ThangLeQuoc/aqi-calculator#for-nowcast-aqi-calculation) |
+| concentrationsLast12Hours | array of double | The first value in the array is the avg value in the current hour, and each next element in the array represent the previous data of the hour before current hour. If the hour doesn't have data, replace missing data in the hour with **-1**. See [here for further example](https://github.com/ThangLeQuoc/aqi-calculator#for-nowcast-aqi-calculation) |
 
 ## Reference: List of pollutant available for AQI calculation
-
-
-```
-
-```
+| Pollutant | Code   |
+|-----------|--------|
+| PM10      | `PM10` |
+| PM2.5     | `PM25` |
+| O3        | `O3`   |
+| CO        | `CO`   |
+| SO2       | `SO2`  |
+| NO2       | `NO2`  |
