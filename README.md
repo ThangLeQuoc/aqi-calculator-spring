@@ -14,7 +14,7 @@ With [Docker](https://www.docker.com/), it's super easy to get the container up 
 Give it a go:  
 > docker pull thanglequoc/aqi-calculator-spring-boot:latest
 
-The container application port is *8080*, you will need to [map your host port to the port](https://docs.docker.com/config/containers/container-networking/) *8080* of the container
+The container application port is **8080**, you will need to [map your host port to the port](https://docs.docker.com/config/containers/container-networking/) **8080** of the container
 
 Run the container with a specified port on your machine (e.g: 8080) to the application port **8080**
 > docker run --name=aqi-calculator -p 8080:8080 thanglequoc/aqi-calculator-spring-boot
