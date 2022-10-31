@@ -67,9 +67,18 @@ Request Body (content-type: JSON)
 ```json
 {
     "pollutant": "PM25",
-    "concentration": 245
+    "concentrationsLast12Hours": [
+        64, 63, 72, 77, 65, 61, 70, 71, 64, 57, 58, 64
+    ]
 }
 ```
+
+| Parameter     | Type   | Detail                                                                                                                                                                                                                    |
+|---------------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| pollutant     | String | The pollutant. See list of available pollutant                                                                                                                                                                            |
+| concentrationsLast12Hours | array of double | The first value in the array is the avg value in the current hour, and each next element in the array represent the previous data of the hour before current hour.
+If the hour doesn't have data, replace missing data in the hour with **-1**. See [here for further example](https://github.com/ThangLeQuoc/aqi-calculator#for-nowcast-aqi-calculation) |
+
 ## Reference: List of pollutant available for AQI calculation
 
 
